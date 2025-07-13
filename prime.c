@@ -12,3 +12,10 @@ int is_prime(int x) {
     }
     return 1;
 }
+
+int next_prime(int x) {
+    while (is_prime(x) != 1) {
+        x++;
+    }
+    return x;
+}
